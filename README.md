@@ -1,1 +1,153 @@
-# portfolio
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ポートフォリオ | 真輝</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 16px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .hero {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    .hero-title {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .hero-sub {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .tag {
+      border: 1px solid var(--accent);
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .section h2 {
+      border-left: 4px solid var(--accent);
+      padding-left: 8px;
+      margin-bottom: 12px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      padding: 16px;
+      border-radius: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>真輝 / ITエンジニア</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-title">課題を理解し、動くプロダクトで解決するエンジニア</div>
+    <div class="hero-sub">Webアプリ開発とクラウド構築を中心に対応しています。</div>
+    <span class="tag">Webエンジニア</span>
+    <span class="tag">バックエンド</span>
+    <span class="tag">AWS</span>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>タスク管理Webアプリ</h3>
+        <p>React / Node.js / PostgreSQL</p>
+        <p>タスクを可視化し、期限超過を30%削減。</p>
+        <a href="#">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>予約管理システム</h3>
+        <p>Next.js / Supabase</p>
+        <p>二重予約ゼロを実現。</p>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>言語・フレームワーク</h3>
+        <ul>
+          <li>JavaScript / TypeScript</li>
+          <li>Python</li>
+          <li>React / Next.js</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>インフラ</h3>
+        <ul>
+          <li>AWS</li>
+          <li>Docker</li>
+          <li>CI/CD</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Mail: example@example.com</p>
+      <p>GitHub: https://github.com/username</p>
+    </div>
+  </section>
+
+  <footer>© 2026 真輝 / Portfolio</footer>
+
+</body>
+</html>
